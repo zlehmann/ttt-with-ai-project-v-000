@@ -85,5 +85,11 @@ class Game
     end
   end
 
-
+  def winner
+    results = nil
+    if self.won? != false
+      results = self.board.position(self.won?[0])
+    end
+    return results
+  end
 end
