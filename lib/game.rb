@@ -50,9 +50,9 @@ class Game
   def won?
     result = nil
     WIN_COMBINATIONS.each do |win_combo|
-      pos1 = self.board.position(win_combo[0].to_i)
-      pos2 = self.board.position(win_combo[1].to_i)
-      pos3 = self.board.position(win_combo[2].to_i)
+      pos1 = self.board.position(win_combo[0]+1)
+      pos2 = self.board.position(win_combo[1]+1)
+      pos3 = self.board.position(win_combo[2]+1)
       if pos1 == "X" && pos2 == "X" && pos3 == "X"
         result = win_combo
       elsif win_combo[0] == "O" && win_combo[1] == "O" && win_combo[2] == "O"
