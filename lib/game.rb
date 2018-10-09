@@ -59,8 +59,20 @@ class Game
         result = win_combo
       end
     end
+    if result == nil
+      result = false
+    end
     return result
   end
 
+def draw?
+  if self.board.full? == false 
+    return false
+  elsif self.won? != false
+    return false
+  else
+    return true
+  end
+end
 
 end
