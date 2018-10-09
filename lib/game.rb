@@ -55,7 +55,7 @@ class Game
       pos3 = self.board.position(win_combo[2]+1)
       if pos1 == "X" && pos2 == "X" && pos3 == "X"
         result = win_combo
-      elsif win_combo[0] == "O" && win_combo[1] == "O" && win_combo[2] == "O"
+      elsif pos1 == "O" && pos2 == "O" && pos3 == "O"
         result = win_combo
       end
     end
@@ -66,7 +66,7 @@ class Game
   end
 
 def draw?
-  if self.board.full? == false 
+  if self.board.full? == false
     return false
   elsif self.won? != false
     return false
