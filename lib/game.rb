@@ -65,14 +65,25 @@ class Game
     return result
   end
 
-def draw?
-  if self.board.full? == false
-    return false
-  elsif self.won? != false
-    return false
-  else
-    return true
+  def draw?
+    if self.board.full? == false
+      return false
+    elsif self.won? != false
+      return false
+    else
+      return true
+    end
   end
-end
+
+  def over?
+    if self.won? == true
+      return true
+    elsif self.draw? == true
+      return true
+    else
+      return false
+    end
+  end
+      
 
 end
