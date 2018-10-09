@@ -92,4 +92,9 @@ class Game
     end
     return results
   end
+
+  def turn 
+    
+
+  
 end
