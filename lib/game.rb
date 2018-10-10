@@ -100,6 +100,7 @@ class Game
       player.move(@board)
     else
       self.update(input, player.token)
+    end
   end
 
 
