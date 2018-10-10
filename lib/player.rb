@@ -9,6 +9,4 @@ class Player
     @token
   end
 
-  include Players::Human
-
 end
