@@ -105,8 +105,7 @@ class Game
   end
 
   def play
-    self.turn
-    if self.over? == false
+    while self.over? == false
       self.turn
     end
   end
