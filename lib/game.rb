@@ -93,7 +93,6 @@ class Game
     return results
   end
 
-  include Players::Human
   def turn
     input = Players::Human.move(@board)
     if self.board.valid_move?(input) == false
