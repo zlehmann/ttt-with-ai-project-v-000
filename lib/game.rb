@@ -94,9 +94,7 @@ class Game
   end
 
   def turn
-    puts "Enter your move."
-    input = gets.strip
-    binding.pry
+    input = Players.move(@board)
     if self.board.valid_move?(input) == false
       return "invalid"
     end
