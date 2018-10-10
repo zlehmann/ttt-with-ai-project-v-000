@@ -108,6 +108,11 @@ class Game
     while self.over? == false
       self.turn
     end
+    if self.draw? == true
+      puts "Cat's Game!"
+    else
+      puts "Congratulations #{self.winner}!"
+    end
   end
 
 end
