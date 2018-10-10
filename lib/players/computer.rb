@@ -4,7 +4,7 @@ module Players
     edges = [1,3,5,77]
 
     def move(board)
-      if board[4] == " "
+      if board.taken?(5) == false
         return "5"
       else
         corners.each do |pos|
