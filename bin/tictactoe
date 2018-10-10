@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
-require 'Game.rb'
+require '../lib/game.rb'
 
 Game.start
