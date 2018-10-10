@@ -94,7 +94,14 @@ class Game
   end
 
   def turn
-
+    puts "Enter your move."
+    input = gets.strip
+    if self.board.valid_move? == false
+      puts "invalid."
+      self.turn
+    end
+  end
+    
 
 
 end
