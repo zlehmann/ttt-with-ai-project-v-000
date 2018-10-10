@@ -97,7 +97,7 @@ class Game
     player = self.current_player
     input = player.move(@board)
     if self.board.valid_move?(input) == false
-      return "invalid"
+      player.move(@board)
     end
     #self.turn
   end
