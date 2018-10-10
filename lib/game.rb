@@ -103,7 +103,7 @@ class Game
     end
   end
 
-  def play 
+  def play
     #self.start???
     if self.over? == true
       if self.won? != false
@@ -114,8 +114,6 @@ class Game
     else
       self.turn
     end
-  end
-        
   end
 
 end
