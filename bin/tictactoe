@@ -3,5 +3,4 @@
 require_relative '../config/environment'
 require_relative '../lib/game.rb'
 
-.import
-Game.start
+new = Game.start
