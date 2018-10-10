@@ -21,9 +21,10 @@ class Game
   def start
     puts "Welcome to Tic Tac Toe!"
     puts "How many players are there?"
-    num_players = gets.strip
-    puts "Who will as X's and go first?"
-    token = gets.strip
+    #num_players = gets.strip
+    #puts "Who will as X's and go first?"
+    #token = gets.strip
+    self.turn
   end
 
   def board
