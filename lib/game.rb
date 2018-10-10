@@ -32,9 +32,9 @@ class Game
       player_2_token = "X"
     end
 
-    if num_players = "0"
+    if num_players == "0"
       game = Game.new(Players::Computer.new(player_1_token), Players::Computer.new(player_2_token), Board.new)
-    elsif num_players = "1"
+    elsif num_players == "1"
       game = Game.new(Players::Human.new(player_1_token), Players::Computer.new(player_2_token), Board.new)
     else
       game = Game.new(Players::Human.new(player_1_token), Players::Human.new(player_2_token), Board.new)
