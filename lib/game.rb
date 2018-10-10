@@ -94,7 +94,7 @@ class Game
   end
 
   def turn
-    input = @player_1
+    input = @player_1.move(@board)
     if self.board.valid_move?(input) == false
       return "invalid"
     end
