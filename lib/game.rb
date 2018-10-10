@@ -106,6 +106,7 @@ class Game
 
   def play
     #self.start???
+    self.turn
     if self.over? != true
       self.turn
     end
