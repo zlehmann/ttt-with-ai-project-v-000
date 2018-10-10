@@ -20,11 +20,25 @@ class Game
 
   def start
     puts "Welcome to Tic Tac Toe!"
-    puts "How many players are there?"
-    #num_players = gets.strip
-    #puts "Who will as X's and go first?"
-    #token = gets.strip
-    self.turn
+    puts "How many human players are there (0, 1, or 2)?"
+    num_players = gets.strip
+    puts "Will player 1 or player 2 play as X's and go first?"
+    token = gets.strip
+    if token == "1"
+      player_1_token = "X"
+      player_2_token = "O"
+    else
+      player_1_token = "O"
+      player_2_token = "X"
+    end
+    
+    if num_players = "0"
+      game = Game.new(Players::Computer.new(player_1_token), Players::Computer.new(player_2_token), Board.new)
+    elsif num_players = "1"
+      game = Game.new(Players::Human.new(player_1_token), Players::Computer.new(player_2_token), Board.new)
+    else
+      game = Game.new(Players::Human.new(player_1_token), Players::Human.new(player_2_token), Board.new)
+    end
   end
 
   def board
