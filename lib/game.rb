@@ -106,12 +106,8 @@ class Game
 
   def play
     #self.start???
-    if self.over? == false
+    if self.over? != true
       self.turn
-    elsif self.won? != false
-      puts "Congratulations #{self.winner}!"
-    elsif self.draw? == true
-      puts "Cat's Game!"
     end
   end
 
