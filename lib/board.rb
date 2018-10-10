@@ -26,8 +26,8 @@ class Board
     return @cells[pos.to_i - 1]
   end
 
-  def update(pos, token)
-    @cells[pos.to_i - 1] = token
+  def update(pos, player)
+    @cells[pos.to_i - 1] = player.token
   end
 
   def full?
