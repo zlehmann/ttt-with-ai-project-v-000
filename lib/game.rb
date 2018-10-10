@@ -99,7 +99,7 @@ class Game
     if self.board.valid_move?(input) == false
       return "invalid"
     end
-    self.turn
+    #self.turn
   end
 
 
