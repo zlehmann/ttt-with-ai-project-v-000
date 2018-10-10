@@ -99,7 +99,7 @@ class Game
     if self.board.valid_move?(input) == false
       input = player.move(@board)
     else
-      self.board.update(input, self.current_player.token)
+      self.board.update(input, player.token)
     end
   end
 
